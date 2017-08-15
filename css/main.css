@@ -1,0 +1,84 @@
+.nav-wrapper {
+  background-color: maroon;
+  border-bottom: solid 2px gold;
+  font-family: 'Righteous', cursive;
+}
+
+h1.flow-text {
+  font-size: 30pt;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-top: 100pt;
+  font-family: 'Righteous', cursive;
+}
+
+body {
+  background-image: url('/img/burgers.jpeg');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+.new-button{
+  text-align: center;
+}
+
+.btn-large {
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  border-radius: 100px;
+}
+
+.row {
+  margin-left: 240px;
+}
+
+.row .col.s4 {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 190px;
+  padding-bottom: 1%;
+  margin-right:10px;
+  margin-left:10px;
+  font-family: 'Righteous', cursive;
+
+}
+
+.tidbits {
+  font-size: 16pt;
+  color: gold;
+  text-align: center;
+  }
+
+.small-tidbits {
+  font-size: 10pt;
+  color: white;
+  text-align: center;
+}
+
+footer.page-footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: maroon;
+  text-align: center;
+  height: 75px;
+  border-top:solid 2px gold;
+  font-family: 'Righteous', cursive;
+}
+
+footer.page-footer-order {
+  position:fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: maroon;
+  text-align: center;
+  height: 75px;
+  border-top:solid 2px gold;
+  font-family: 'Righteous', cursive;
