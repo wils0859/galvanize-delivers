@@ -82,3 +82,9 @@ footer.page-footer-order {
   height: 75px;
   border-top:solid 2px gold;
   font-family: 'Righteous', cursive;
+}
+
+.tagline {
+  font-size: 7pt;
+  text-align: left;
+}
