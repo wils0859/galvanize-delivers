@@ -9,12 +9,17 @@
   <title>Galvanize Delivers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://use.fontawesome.com/fb07e26f3f.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="js/delivers.js" charset="utf-8"></script>
 </head>
 
 <body>
   <nav>
     <div class="nav-wrapper">
-      <a href="index.html" class="brand-logo">Galvanize Delivers  <i class="fa fa-home" aria-hidden="true"></i></a>
+      <a href="index.html" class="brand-logo"><i class="fa fa-bolt" aria-hidden="true"></i>  Shock Transports  <i class="fa fa-bolt" aria-hidden="true"></i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="order.html">Order Stuff</a></li>
       </ul>
@@ -22,81 +27,110 @@
   </nav>
 
 
-  <div class="column" class="col s12 m6">
 
-
-    <div class="row" class="contains-cards">>
-
-
-        <div class="column" class="card small" class="sticky-action"
+  <div class="row" id="order-page">
+    <div class="column" id="food-column">
+      <h1 id="menu">Menu</h1>
+      <div class="row" id="card-container">
+        <div class="card small" class "sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="img/burger.jpg">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Cow on a Bun<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">Add</a></p>
+            <span class="card-title activator grey-text text-darken-4 food-name">Cow on a Bun<i class="material-icons right">more_vert</i></span>
+            <h2 class="price">$10.99</h2>
+            <p><a href="#" class="button-add">ADD ITEM</a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Cow on a Bun<i class="material-icons right">close</i></span>
-            <p>Burger</p>
+            <p>Delicious combination of chopped up cow, curdled cow's milk, and veggies snuggled in between two slices of bread.</p>
           </div>
-        </div>
 
-        <div class="column" class="card small" class="sticky-action" class="col s12 m6 push-s2">>
+        </div>
+        <div class="card small">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="img/pizza.jpg">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Leafy Pizza<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">Add</a></p>
+            <span class="card-title activator grey-text text-darken-4 food-name">Leafy Pizza<i class="material-icons right">more_vert</i></span>
+            <h2 class="price">$12.99</h2>
+            <p><a href="#" class="button-add">ADD ITEM</a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Leafy Pizza<i class="material-icons right">close</i></span>
-            <p>Pizza.</p>
+            <p>We put leafy stuff on pizza dough and carefully (sort of) apply a lot of heat.</p>
           </div>
         </div>
       </div>
 
+      <div class="row" id="card-container">
 
-
-      <div class="row" class="contains-cards">
-
-
-          <div class="column" class="card small" class="sticky-action" class="col s12 m6 push-s1">>
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/ribs.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Smoked Swine<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Add</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Smoked Swine<i class="material-icons right">close</i></span>
-              <p>Ribs.</p>
-            </div>
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/ribs.jpg">
           </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4 food-name">Smoked Swine<i class="material-icons right">more_vert</i></span>
+            <h2 class="price">$15.99</h2>
+            <p><a href="#" class="button-add">ADD ITEM</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Smoked Swine<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
 
-          <div class="column" class="card small" class="sticky-action" class="col s12 m6 push-s2">>
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/ice_cream.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Ice Cream Biscuit<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Add</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Ice Cream Biscuit<i class="material-icons right">close</i></span>
-              <p>This is an ice cream sandwich.</p>
-            </div>
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/ice_cream.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4 food-name">Ice Cream Biscuit<i class="material-icons right">more_vert</i></span>
+            <h2 class="price">$7.99</h2>
+            <p><a href="#" class="button-add">ADD ITEM</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Ice Cream Biscuit<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
           </div>
         </div>
       </div>
 
-    <div class="column" class="col s12 m6">
-      <p>jnofsdojfsdofds</p>
+    </div>
+  <h1 id="menu-two">Order</h1>
+    <div class="column" id="price-column">
+      <div class="cart-wrapper">
+      <h1 id="cart-title">Cart</h1>
+        <table class="table table-striped" id="orders">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Quantity</td>
+              <td>Price</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Sub Total:<div id="subtotal"></div></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
     </div>
 
+    </div>
   </div>
+</div>
 
 
 
@@ -110,7 +144,7 @@
         </div>
       </div>
     </div>
-    <a class="grey-text text-lighten-4 left" href="index.html">Galvanize Delivers</a>
+    <a class="grey-text text-lighten-4 left" href="index.html">Shock Transports</a>
     <a class="grey-text text-lighten-4 right" href="order.html">Order Yums</a>
     <a class="grey-text text-lighten-4" class "copyright">© 1776 Ben Wilson, Inc.</a>
     </div>
