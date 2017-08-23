@@ -1,7 +1,11 @@
 .nav-wrapper {
-  background-color: indigo;
+  background-color: maroon;
   border-bottom: solid 2px gold;
   font-family: 'Righteous', cursive;
+}
+
+.brand-logo {
+  margin-left: 10px;
 }
 
 h1.flow-text {
@@ -63,8 +67,10 @@ footer.page-footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-  background-color: indigo;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0;
+  background-color: maroon;
   text-align: center;
   height: 75px;
   border-top:solid 2px gold;
@@ -72,21 +78,24 @@ footer.page-footer {
 }
 
 footer.page-footer-order {
-  position:fixed;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-  background-color: indigo;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: maroon;
   text-align: center;
   height: 75px;
   border-top:solid 2px gold;
   font-family: 'Righteous', cursive;
+  z-index: 3;
 }
 
 .tagline {
   font-size: 7pt;
   text-align: left;
+  font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 .card {
@@ -104,13 +113,17 @@ footer.page-footer-order {
   background-color: gold;
   font-size: 10pt;
   border-radius: 10pt;
-  font-family: 'Righteous', cursive;
+  font-family: 'Saira Semi Condensed', sans-serif;
   padding: 10pt;
   padding-top: 5pt;
 }
 
+.card .card-title {
+  font-weight: bold;
+}
+
 h2 {
-  font-size: 12pt;
+  font-size: 14pt;
   margin-top: 0;
   margin-bottom: 2pt;
 }
@@ -118,6 +131,7 @@ h2 {
 .card .card-image img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  z-index: 0;
 }
 
 .card-content a {
@@ -125,8 +139,9 @@ h2 {
   margin-top: 0;
 }
 
-.card-reveal {
+.card .card-reveal {
   background-color: gold;
+  font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 #order-page {
@@ -178,7 +193,7 @@ h2 {
 .table {
   color: white;
   margin: 0;
-  font-family: 'Righteous', cursive;
+  font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 td, th {
@@ -193,6 +208,18 @@ td, th {
   font-size: 14pt;
   margin-top: 5pt;
   text-align: center;
-  font-family: 'Righteous', cursive;
+  font-family: 'Saira Semi Condensed', sans-serif;
   margin-bottom: 0;
+  font-weight: bold;
+}
+
+.remove-custom {
+  background-color: gold;
+  color: black;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 12pt;
+  border-radius: 5pt;
+  font-weight: bold;
+  padding-left: 2pt;
+  padding-right: 2pt;
 }

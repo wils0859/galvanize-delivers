@@ -3,17 +3,15 @@
 
 <head>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection" />
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-  <title>Galvanize Delivers</title>
+  <title>Shock Transports</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://use.fontawesome.com/fb07e26f3f.js"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-    <script src="js/delivers.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="js/delivers.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -32,29 +30,29 @@
     <div class="column" id="food-column">
       <h1 id="menu">Menu</h1>
       <div class="row" id="card-container">
-        <div class="card small" class "sticky-action">
+        <div class="card small sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="img/burger.jpg">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4 food-name">Cow on a Bun<i class="material-icons right">more_vert</i></span>
             <h2 class="price">$10.99</h2>
-            <p><a href="#" class="button-add">ADD ITEM</a></p>
+            <p><a class="btn-floating waves-effect waves-light black button-add right"><i class="material-icons">add</i></a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Cow on a Bun<i class="material-icons right">close</i></span>
-            <p>Delicious combination of chopped up cow, curdled cow's milk, and veggies snuggled in between two slices of bread.</p>
+            <p>Delicious combination of mutilated cow, curdled cow's milk, and veggies snuggled in between two slices of bread.</p>
           </div>
 
         </div>
-        <div class="card small">
+        <div class="card small sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="img/pizza.jpg">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4 food-name">Leafy Pizza<i class="material-icons right">more_vert</i></span>
             <h2 class="price">$12.99</h2>
-            <p><a href="#" class="button-add">ADD ITEM</a></p>
+            <p><a class="btn-floating waves-effect waves-light black button-add right"><i class="material-icons">add</i></a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Leafy Pizza<i class="material-icons right">close</i></span>
@@ -72,11 +70,11 @@
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4 food-name">Smoked Swine<i class="material-icons right">more_vert</i></span>
             <h2 class="price">$15.99</h2>
-            <p><a href="#" class="button-add">ADD ITEM</a></p>
+            <p><a class="btn-floating waves-effect waves-light black button-add right"><i class="material-icons">add</i></a></p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Smoked Swine<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <p>Remember Babe, the pig from the '90's movie?  This is what happened to him after the movie.  He's delicious!</p>
           </div>
         </div>
 
@@ -85,22 +83,22 @@
             <img class="activator" src="img/ice_cream.jpg">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4 food-name">Ice Cream Biscuit<i class="material-icons right">more_vert</i></span>
+            <span class="card-title activator grey-text text-darken-4 food-name">Melty Messy Treat<i class="material-icons right">more_vert</i></span>
             <h2 class="price">$7.99</h2>
-            <p><a href="#" class="button-add">ADD ITEM</a></p>
+            <p><a class="btn-floating waves-effect waves-light black button-add right"><i class="material-icons">add</i></a></p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Ice Cream Biscuit<i class="material-icons right">close</i></span>
+            <span class="card-title grey-text text-darken-4">Melty Messy Treat<i class="material-icons right">close</i></span>
             <p>Here is some more information about this product that is only revealed once clicked on.</p>
           </div>
         </div>
       </div>
 
     </div>
-  <h1 id="menu-two">Order</h1>
+    <h1 id="menu-two">Order</h1>
     <div class="column" id="price-column">
       <div class="cart-wrapper">
-      <h1 id="cart-title">Cart</h1>
+        <h1 id="cart-title">Cart</h1>
         <table class="table table-striped" id="orders">
           <thead>
             <tr>
@@ -110,6 +108,8 @@
               <td></td>
             </tr>
           </thead>
+          <tbody>
+          </tbody>
           <tfoot>
             <tr>
               <td></td>
@@ -120,17 +120,33 @@
             <tr>
               <td></td>
               <td></td>
-              <td>Sub Total:<div id="subtotal"></div></td>
+              <td>Subtotal:<div id="subtotal"></div></td>
               <td></td>
             </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Tax:<div id="taxes"></div></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Total:<div id="total"></div></td>
+              <td></td>
+            </tr>
+
           </tfoot>
         </table>
       </div>
+      <div>
+        <form id="customer-info"></form>
+        <input type="text" name="cust-name" id="cust-name">
+      </div>
     </div>
 
-    </div>
   </div>
-</div>
+
 
 
 
